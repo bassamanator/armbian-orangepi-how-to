@@ -121,7 +121,7 @@ alias wboard='watch -n 1 '\''echo "CPU Freq: $(cat /sys/devices/system/cpu/cpufr
 
 # Sources
 
-- [Armbian](https://)
-- [wiringOP](https://)
-- [wiringOP](https://)
-- [wiringOP](https://)
+- [Armbian](https://www.armbian.com/orange-pi-zero-2w/)
+- [Orange Pi Zero 2W Wiki](http://www.orangepi.org/orangepiwiki/index.php/Orange_Pi_Zero_2W)
+- [wiringOP](https://github.com/orangepi-xunlong/wiringOP)
+- [wiringOP-Python](https://github.com/orangepi-xunlong/wiringOP-Python)
