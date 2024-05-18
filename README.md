@@ -1,12 +1,12 @@
 # Purpose
 
-I felt that the Debian image for the Orange Pi Zero 2W was a bit _wonky_, so thought a pure Armbian image might be worth looking into.
+I felt that the Debian image for the Orange Pi Zero 2W was a bit _wonky_, so I thought a pure Armbian image might be worth looking into.
 
 # Target Device
 
 I checked the manual for the Orange Pi Zero 2W and the Orange Pi 5 Plus, and the same process applies to both. Therefore, it is likely that this process will work for any variant of the Orange Pi.
 
-I will be using the Orange Pi Zero 2W for the purposes of this guide.
+I will be using the **Orange Pi Zero 2W** for the purposes of this guide.
 
 # Armbian Image for the Orange Pi Zero 2W
 
