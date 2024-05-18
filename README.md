@@ -40,6 +40,7 @@ PRESET_DEFAULT_REALNAME='Orange Pi'
 
 3. Boot the device with the microSD card.
 4. Wait 3-4 minutes for the first boot, then you can `SSH` into the device.
+5. Do a full update `sudo apt update && sudo apt full-upgrade` (_optional_).
 
 # GPIO
 
@@ -60,7 +61,7 @@ git clone https://github.com/orangepi-xunlong/wiringOP.git -b next
 ### Compile and install wiringOP
 
 ```shell
-cd wiringOP
+cd ~/wiringOP
 sudo ./build clean
 sudo ./build
 ```
