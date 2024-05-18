@@ -26,7 +26,7 @@ sudo ./build
 gpio readall
 ```
 
-Expected output:
+### Expected output
 
 # wiringOP-Python
 
@@ -52,4 +52,22 @@ git submodule update --init --remote
 ```shell
 python3 generate-bindings.py > bindings.i
 sudo python3 setup.py install
+```
+
+## Test the installation
+
+```shell
+ python3 -c "import wiringpi; help(wiringpi)"
+```
+
+### Expected output
+
+```Python
+Help on module wiringpi:
+
+NAME
+    wiringpi
+
+DESCRIPTION
+...
 ```
