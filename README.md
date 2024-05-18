@@ -5,7 +5,7 @@
 
 ## Wireless setup
 
-I will be doing a headless setup. Armbian lets you `PRESET` certain things, you can find the full list [here](https://github.com/armbian/build/blob/66b0171516297ced0b0fead62c2f2763627176e5/extensions/preset-firstrun.sh).
+I will be doing a headless setup, so I need the Wifi to connect automatically on boot. Armbian lets you `PRESET` certain things, you can find the full list [here](https://github.com/armbian/build/blob/66b0171516297ced0b0fead62c2f2763627176e5/extensions/preset-firstrun.sh). I'll be setting up the Wifi, and making other adjustments as well (you don't need to though).
 
 1. On your microSD card, create a file named `/root/.not_logged_in_yet`.
 2. You **must** adjust the following to your needs:
@@ -16,8 +16,9 @@ PRESET_NET_WIFI_ENABLED=1
 PRESET_NET_WIFI_SSID='Wifi network name'
 PRESET_NET_WIFI_KEY='Wifi password'
 PRESET_NET_WIFI_COUNTRYCODE='CA'
-PRESET_CONNECT_WIRELESS=n
+PRESET_CONNECT_WIRELESS=n # Yes, this is correct
 SET_LANG_BASED_ON_LOCATION=n
+PRESET_LOCALE=en_CA.UTF-8
 PRESET_TIMEZONE=America/Toronto # Find via web search or type `timedatectl list-timezones` in a linux terminal
 PRESET_ROOT_PASSWORD=tester123
 PRESET_USER_NAME=opi # Add new user
