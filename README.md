@@ -31,7 +31,7 @@ PRESET_CONNECT_WIRELESS=n # Yes, this is correct
 # Optional
 SET_LANG_BASED_ON_LOCATION=n
 PRESET_LOCALE=en_CA.UTF-8 # https://simplelocalize.io/data/locales/
-PRESET_TIMEZONE=America/Toronto # Find via web search or type `timedatectl list-timezones` in a linux terminal
+PRESET_TIMEZONE=America/Toronto # Type `timedatectl list-timezones` in a linux terminal
 PRESET_ROOT_PASSWORD=tester123 # Armbian default is 1234
 PRESET_USER_NAME=opi # Add new user
 PRESET_USER_PASSWORD=tester123
