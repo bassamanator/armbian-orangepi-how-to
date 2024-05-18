@@ -71,3 +71,17 @@ NAME
 DESCRIPTION
 ...
 ```
+
+# Useful Aliases
+
+```bash
+# Live view of CPU core temperatures
+alias wtemp='watch -n 1 "cat /sys/class/thermal/thermal_zone0/temp && cat /sys/class/thermal/thermal_zone1/temp && cat /sys/class/thermal/thermal_zone2/temp && cat /sys/class/thermal/thermal_zone3/temp"'
+
+# Live view of CPU speed
+alias wspeed='watch -n 1 "cat /sys/devices/system/cpu/cpufreq/policy0/scaling_cur_freq"'
+
+# Live view of CPU speed and temperatures
+alias wboard='watch -n 1 '\''echo "CPU Freq: $(cat /sys/devices/system/cpu/cpufreq/policy0/scaling_cur_freq)"; echo "CPU0: $(cat /sys/class/thermal/thermal_zone0/temp)"; echo "CPU1: $(cat /sys/class/thermal/thermal_zone1/temp)"; echo "CPU2: $(cat /sys/class/thermal/thermal_zone2/temp)"; echo "CPU3: $(cat /sys/class/thermal/thermal_zone3/temp)"'\'
+
+```
