@@ -1,3 +1,9 @@
+<p align="center">
+<img src="./repo-logo.jpeg" width="400" alt='logo'/>
+</p>
+
+\* _This page is a 4 minute read._
+
 # Purpose
 
 I felt that the Debian image for the Orange Pi Zero 2W was a bit _wonky_, so I thought a pure Armbian image might be worth looking into.
