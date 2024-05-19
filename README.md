@@ -8,7 +8,7 @@
 
 I felt that the Debian image for the Orange Pi Zero 2W was a bit _wonky_, so I thought a pure Armbian image might be worth looking into.
 
-# Target Device
+# Target Devices
 
 I checked the manual for the Orange Pi Zero 2W and the Orange Pi 5 Plus, and the same process applies to both. Therefore, it is likely that this process will work for any variant of the Orange Pi. You can find an _incomplete_ list on the official [wiringOP](https://github.com/orangepi-xunlong/wiringOP) repo.
 
@@ -21,7 +21,7 @@ I will be using the **Orange Pi Zero 2W** for the purposes of this guide.
 
 ## Wireless Setup
 
-📝 _For those who are not going headless, you have the option of skipping steps 1 and 2._
+📝 _For those who are **not** going [headless](https://en.wikipedia.org/wiki/Headless_computer), you have the option of skipping steps 1 and 2._
 
 I will be doing a `headless` setup, so I need the Wifi to connect automatically on boot. Armbian lets you `PRESET` certain things, you can find the full list [here](https://github.com/armbian/build/blob/66b0171516297ced0b0fead62c2f2763627176e5/extensions/preset-firstrun.sh). I'll be setting up the Wifi, and making other adjustments as well (you don't need to though).
 
@@ -31,11 +31,15 @@ I will be doing a `headless` setup, so I need the Wifi to connect automatically 
 ```bash
 # Required
 PRESET_NET_CHANGE_DEFAULTS=1
+
+# If both WIFI and ETHERNET are enabled, WiFi will take priority and Ethernet will be disabled.
 PRESET_NET_WIFI_ENABLED=1
+PRESET_NET_ETHERNET_ENABLED=1 # Just as an example
 PRESET_NET_WIFI_SSID='Wifi network name'
 PRESET_NET_WIFI_KEY='Wifi password'
 PRESET_NET_WIFI_COUNTRYCODE='CA' # https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
-PRESET_CONNECT_WIRELESS=n # Yes, this is correct
+PRESET_CONNECT_WIRELESS=n # Yes, this is correct, if you want Wifi to connect automatically
+
 # Optional
 SET_LANG_BASED_ON_LOCATION=n
 PRESET_LOCALE=en_CA.UTF-8 # https://simplelocalize.io/data/locales/
@@ -138,6 +142,8 @@ DESCRIPTION
 ```
 
 🎉 If you've made it this far with the `expected outputs`, your Orange Pi is good to go! 🎉
+
+Please star ⭐ the repo!
 
 # Useful Armbian Utils
 
