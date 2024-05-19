@@ -15,6 +15,8 @@ I will be using the **Orange Pi Zero 2W** for the purposes of this guide.
 
 ## Wireless Setup
 
+📝 _For those who are not going headless, you have the option of skipping steps 1 and 2._
+
 I will be doing a `headless` setup, so I need the Wifi to connect automatically on boot. Armbian lets you `PRESET` certain things, you can find the full list [here](https://github.com/armbian/build/blob/66b0171516297ced0b0fead62c2f2763627176e5/extensions/preset-firstrun.sh). I'll be setting up the Wifi, and making other adjustments as well (you don't need to though).
 
 1. On your previously imaged microSD card, edit the file `/root/.not_logged_in_yet`. 📝 In linux, you will need `root` privileges to edit this file.
