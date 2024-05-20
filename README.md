@@ -57,8 +57,10 @@ PRESET_USER_PASSWORD=tester123
 PRESET_DEFAULT_REALNAME='Orange Pi'
 ```
 
+⚠️❗ Delete all comments (lines starting with `#`) and all empty lines!
+
 3. Boot the device with the microSD card (first boot will take 2-3 minutes).
-4. `SSH` into the device, I'll be using my `opi` user: `ssh opi@ip.address`.
+4. `SSH` into the device: `ssh root@ip.address`.
 5. Do a full update and reboot.
 
 ```shell
