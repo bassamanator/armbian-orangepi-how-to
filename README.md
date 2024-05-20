@@ -34,18 +34,25 @@ PRESET_NET_CHANGE_DEFAULTS=1
 
 # If both WIFI and ETHERNET are enabled, WiFi will take priority and Ethernet will be disabled.
 PRESET_NET_WIFI_ENABLED=1
-PRESET_NET_ETHERNET_ENABLED=1 # Just as an example
+# Just as an example
+PRESET_NET_ETHERNET_ENABLED=1
 PRESET_NET_WIFI_SSID='Wifi network name'
 PRESET_NET_WIFI_KEY='Wifi password'
-PRESET_NET_WIFI_COUNTRYCODE='CA' # https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
-PRESET_CONNECT_WIRELESS=n # Yes, this is correct, if you want Wifi to connect automatically
+# https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
+PRESET_NET_WIFI_COUNTRYCODE='CA'
+# Yes, the following is correct, if you want Wifi to connect automatically
+PRESET_CONNECT_WIRELESS=n
 
 # Optional
 SET_LANG_BASED_ON_LOCATION=n
-PRESET_LOCALE=en_CA.UTF-8 # https://simplelocalize.io/data/locales/
-PRESET_TIMEZONE=America/Toronto # Type `timedatectl list-timezones` in a linux terminal
-PRESET_ROOT_PASSWORD=tester123 # Armbian default is 1234
-PRESET_USER_NAME=opi # Adds a new user to the `sudo` group
+# https://simplelocalize.io/data/locales/
+PRESET_LOCALE=en_CA.UTF-8
+# Type `timedatectl list-timezones` in a linux terminal
+PRESET_TIMEZONE=America/Toronto
+# Armbian default root password is 1234
+PRESET_ROOT_PASSWORD=tester123
+# Adds a new user to the `sudo` group
+PRESET_USER_NAME=opi
 PRESET_USER_PASSWORD=tester123
 PRESET_DEFAULT_REALNAME='Orange Pi'
 ```
