@@ -4,6 +4,10 @@
 
 \* _This page is a 4 minute read._
 
+# Accompanying YouTube Video
+
+Faster to just read the `README`, but [here](https://youtu.be/UN8T_Bn4E-o).
+
 # Purpose
 
 I felt that the Debian image for the Orange Pi Zero 2W was a bit _wonky_, so I thought a pure Armbian image might be worth looking into.
