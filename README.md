@@ -45,8 +45,8 @@ PRESET_CONNECT_WIRELESS=n
 
 # Optional
 SET_LANG_BASED_ON_LOCATION=n
-# https://simplelocalize.io/data/locales/
-PRESET_LOCALE=en_CA.UTF-8
+# Do not change en_US.UTF-8, or it will lead to an error with user creation
+PRESET_LOCALE=en_US.UTF-8
 # Type `timedatectl list-timezones` in a linux terminal
 PRESET_TIMEZONE=America/Toronto
 # Armbian default root password is 1234
