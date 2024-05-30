@@ -4,6 +4,8 @@
 
 \* _This page is a 4 minute read._
 
+\*\* _I will be using the **Orange Pi Zero 2W** for the purposes of this guide._
+
 # Accompanying YouTube Video
 
 Faster to just read the `README`, but [here](https://youtu.be/UN8T_Bn4E-o).
@@ -12,13 +14,24 @@ Faster to just read the `README`, but [here](https://youtu.be/UN8T_Bn4E-o).
 
 I felt that the Debian image for the Orange Pi Zero 2W was a bit _wonky_, so I thought a pure Armbian image might be worth looking into.
 
-# Target Devices
+# Target Boards
 
-I checked the manual for the Orange Pi Zero 2W and the Orange Pi 5 Plus, and the same process applies to both. Therefore, it is likely that this process will work for any variant of the Orange Pi. You can find an _incomplete_ list on the official [wiringOP](https://github.com/orangepi-xunlong/wiringOP) repo.
+These instructions will work _without adjustment_ for many Orange Pi boards.
 
-I will be using the **Orange Pi Zero 2W** for the purposes of this guide.
+You can find instructions for your particular Orange Pi board on the [Orange Pi Wiki](http://www.orangepi.org/orangepiwiki/index.php/Main_Page).
 
-# Armbian Image for the Orange Pi Zero 2W
+Should work on ✅:
+
+- Orange Pi Zero 2W
+- Orange Pi 5 Plus
+
+Known to not work ❌:
+
+- Orange Pi PC Plus
+
+You can find an _incomplete_ list on the official [wiringOP](https://github.com/orangepi-xunlong/wiringOP) repo.
+
+# Orange Pi Zero 2W Armbian Setup
 
 1. Download your preferred image from [Armbian](https://www.armbian.com/orange-pi-zero-2w/).
 2. Burn the image onto a microSD card using something like [USBImager](https://bztsrc.gitlab.io/usbimager/).
@@ -63,7 +76,7 @@ PRESET_DEFAULT_REALNAME='Orange Pi'
 
 ⚠️❗ Delete all comments (lines starting with `#`) and all empty lines!
 
-3. Boot the device with the microSD card (first boot will take 2-3 minutes).
+3. Boot the device with the microSD card (first boot takes longer).
 4. `SSH` into the device: `ssh root@ip.address`.
 5. Do a full update and reboot.
 
