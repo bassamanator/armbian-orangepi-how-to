@@ -72,15 +72,15 @@ sudo apt update && sudo apt full-upgrade --yes
 sudo reboot now
 ```
 
-# GPIO
+## GPIO
 
 To be able to use the GPIO pins, certain packages must be installed.
 
-## wiringOP
+### wiringOP
 
 Original instructions [source](http://www.orangepi.org/orangepiwiki/index.php/Orange_Pi_Zero_2W#How_to_install_wiringOP).
 
-### Clone the Repo
+#### Clone the Repo
 
 ```shell
 cd ~
@@ -88,7 +88,7 @@ sudo apt update && sudo apt install git
 git clone https://github.com/orangepi-xunlong/wiringOP.git -b next
 ```
 
-### Compile and install wiringOP
+#### Compile and install wiringOP
 
 ```shell
 cd ~/wiringOP
@@ -96,29 +96,29 @@ sudo ./build clean
 sudo ./build
 ```
 
-### Test the installation
+#### Test the installation
 
 ```shell
 gpio readall
 ```
 
-#### Expected output
+##### Expected output
 
 <img src="./gpio.jpg" height="300" alt='gpio table'/>
 
 \* _Will vary depending on your device_
 
-## wiringOP-Python
+### wiringOP-Python
 
 Original instructions [source](http://www.orangepi.org/orangepiwiki/index.php/Orange_Pi_Zero_2W#How_to_install_wiringOP).
 
-### Install Packages
+#### Install Packages
 
 ```shell
 sudo apt install swig python3-dev python3-setuptools
 ```
 
-### Ready the Repo
+#### Ready the Repo
 
 ```shell
 cd ~
@@ -127,20 +127,20 @@ cd wiringOP-Python
 git submodule update --init --remote
 ```
 
-### Compile and Install
+#### Compile and Install
 
 ```shell
 python3 generate-bindings.py > bindings.i
 sudo python3 setup.py install
 ```
 
-### Test the Installation
+#### Test the Installation
 
 ```shell
  python3 -c "import wiringpi; help(wiringpi)"
 ```
 
-#### Expected output
+##### Expected output
 
 ```Python
 Help on module wiringpi:
