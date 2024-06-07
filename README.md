@@ -24,6 +24,7 @@ Should work on ✅:
 
 - Orange Pi Zero 2W
 - Orange Pi 5 Plus
+- Orange Pi Zero 3
 
 Known to not work ❌:
 
