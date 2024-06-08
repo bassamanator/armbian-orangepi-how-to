@@ -16,9 +16,7 @@ I felt that the Debian image for the Orange Pi Zero 2W was a bit _wonky_, so I t
 
 # Target Boards
 
-These instructions will work _without adjustment_ for many Orange Pi boards.
-
-You can find instructions for your particular Orange Pi board on the [Orange Pi Wiki](http://www.orangepi.org/orangepiwiki/index.php/Main_Page).
+These instructions will work _without adjustment_ for many Orange Pi boards. This applies more to the wiringOP side of things (necessary for GPIO to work), as opposed to Armbian (which is easy to get up and running).
 
 Should work on ✅:
 
@@ -29,8 +27,6 @@ Should work on ✅:
 Known to not work ❌:
 
 - Orange Pi PC Plus
-
-You can find an _incomplete_ list on the official [wiringOP](https://github.com/orangepi-xunlong/wiringOP) repo.
 
 # Orange Pi Zero 2W Armbian Setup
 
@@ -91,6 +87,10 @@ sudo reboot now
 To be able to use the GPIO pins, certain packages must be installed.
 
 ### wiringOP
+
+📝 You can find installation instructions for your particular Orange Pi board on the [Orange Pi Wiki](http://www.orangepi.org/orangepiwiki/index.php/Main_Page).
+
+<!-- You can find an _incomplete_ list on the official [wiringOP](https://github.com/orangepi-xunlong/wiringOP) repo. -->
 
 Original instructions [source](http://www.orangepi.org/orangepiwiki/index.php/Orange_Pi_Zero_2W#How_to_install_wiringOP).
 
