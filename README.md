@@ -68,7 +68,7 @@ PRESET_ROOT_PASSWORD=tester123
 # Adds a new user to the `sudo` group
 PRESET_USER_NAME=opi
 PRESET_USER_PASSWORD=tester123
-PRESET_DEFAULT_REALNAME='Orange Pi'
+PRESET_DEFAULT_REALNAME=OrangePi
 ```
 
 3. Boot the device with the microSD card (first boot takes longer).
