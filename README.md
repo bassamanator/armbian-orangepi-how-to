@@ -96,6 +96,8 @@ Original instructions [source](http://www.orangepi.org/orangepiwiki/index.php/Or
 
 ```shell
 cd ~
+mkdir -p code
+cd ~/code
 sudo apt update && sudo apt install git
 git clone https://github.com/orangepi-xunlong/wiringOP.git -b next
 ```
@@ -103,7 +105,7 @@ git clone https://github.com/orangepi-xunlong/wiringOP.git -b next
 #### Compile and install wiringOP
 
 ```shell
-cd ~/wiringOP
+cd ~/code/wiringOP
 sudo ./build clean
 sudo ./build
 ```
@@ -133,7 +135,7 @@ sudo apt install swig python3-dev python3-setuptools
 #### Ready the Repo
 
 ```shell
-cd ~
+cd ~/code
 git clone --recursive https://github.com/orangepi-xunlong/wiringOP-Python -b next
 cd wiringOP-Python
 git submodule update --init --remote
