@@ -37,38 +37,37 @@ Known to not work ❌:
 
 📝 _For those who are **not** going [headless](https://en.wikipedia.org/wiki/Headless_computer), you have the option of skipping steps 1 and 2._
 
-I will be doing a `headless` setup, so I need the Wifi to connect automatically on boot. Armbian lets you `PRESET` certain things, you can find the full list [here](https://github.com/armbian/build/blob/66b0171516297ced0b0fead62c2f2763627176e5/extensions/preset-firstrun.sh). I'll be setting up the Wifi, and making other adjustments as well (you don't need to though).
+I will be doing a `headless` setup, so I need the Wifi to connect automatically on boot. Armbian lets you `PRESET` certain things, you can find the full list [here](https://docs.armbian.com/User-Guide_Autoconfig/). I'll be setting up the Wifi, and making other adjustments as well (you don't need to though).
 
 1. On your previously imaged microSD card, edit the file `/root/.not_logged_in_yet`. 📝 In linux, you will need `root` privileges to edit this file.
 2. These are the file contents. You **must** adjust to your needs:
 
 ```bash
 # Required
-PRESET_NET_CHANGE_DEFAULTS=1
+PRESET_NET_CHANGE_DEFAULTS="1"
 
 # If both WIFI and ETHERNET are enabled, WiFi will take priority and Ethernet will be disabled.
-PRESET_NET_WIFI_ENABLED=1
+PRESET_NET_WIFI_ENABLED="1"
 # Just as an example
-PRESET_NET_ETHERNET_ENABLED=1
-PRESET_NET_WIFI_SSID='Wifi network name'
-PRESET_NET_WIFI_KEY='Wifi password'
+PRESET_NET_ETHERNET_ENABLED="1"
+PRESET_NET_WIFI_SSID="Wifi network name"
+PRESET_NET_WIFI_KEY="Wifi password"
 # https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes
-PRESET_NET_WIFI_COUNTRYCODE='CA'
+PRESET_NET_WIFI_COUNTRYCODE="CA"
 # Yes, the following is correct, if you want Wifi to connect automatically
-PRESET_CONNECT_WIRELESS=n
+PRESET_CONNECT_WIRELESS="n"
 
 # Optional
-SET_LANG_BASED_ON_LOCATION=n
-# Do not change en_US.UTF-8, or it will lead to an error with user creation
-PRESET_LOCALE=en_US.UTF-8
+SET_LANG_BASED_ON_LOCATION="n"
+PRESET_LOCALE="en_US.UTF-8"
 # Type `timedatectl list-timezones` in a linux terminal
-PRESET_TIMEZONE=America/Toronto
+PRESET_TIMEZONE="America/Toronto"
 # Armbian default root password is 1234
-PRESET_ROOT_PASSWORD=tester123
+PRESET_ROOT_PASSWORD="tester123"
 # Adds a new user to the `sudo` group
-PRESET_USER_NAME=opi
-PRESET_USER_PASSWORD=tester123
-PRESET_DEFAULT_REALNAME=OrangePi
+PRESET_USER_NAME="opi"
+PRESET_USER_PASSWORD="tester123"
+PRESET_DEFAULT_REALNAME="Orange Pi"
 ```
 
 3. Boot the device with the microSD card (first boot takes longer).
