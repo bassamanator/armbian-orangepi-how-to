@@ -2,9 +2,11 @@
 <img src="./repo-logo.jpeg" width="400" alt='logo'/>
 </p>
 
-\* _This page is a 4 minute read._
+> [!NOTE]
+> _This page is a 4 minute read._
 
-\*\* _I will be using the **Orange Pi Zero 2W** for the purposes of this guide._
+> [!NOTE]
+> _I will be using the **Orange Pi Zero 2W** for the purposes of this guide._
 
 # Accompanying YouTube Video
 
@@ -121,6 +123,9 @@ gpio readall
 \* _Will vary depending on your device_
 
 ### wiringOP-Python
+
+> [!IMPORTANT]
+> I have found that newer images of Armbian will have significant issues with the `wiringOP-Python` installation.
 
 Original instructions [source](http://www.orangepi.org/orangepiwiki/index.php/Orange_Pi_Zero_2W#How_to_install_wiringOP).
 
